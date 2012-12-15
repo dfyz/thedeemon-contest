@@ -18,9 +18,9 @@ func Die(message string, args ...interface{}) {
 }
 
 const (
-    processCount = 1 << 20
-    initialValue = 0
-    iterationCount = 7
+	processCount = 1 << 20
+	initialValue = 0
+	iterationCount = 7
 	imageSize = 1024
 )
 
@@ -84,7 +84,7 @@ func main() {
 		tokens := strings.Split(line, "\t")
 		states[pid] = ProcessState {
 			make([]uint, len(tokens) - 3),
-            initialValue,
+			initialValue,
 			parseOrDie(tokens[len(tokens) - 2]),
 			parseOrDie(tokens[len(tokens) - 1]),
 		}
