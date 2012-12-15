@@ -19,7 +19,7 @@ func Die(message string, args ...interface{}) {
 
 const (
 	memorySize = 13371111
-	startIp = 36
+	startIp = 32
 )
 
 func GetOpcode(word int32) int32 {
